@@ -101,7 +101,7 @@ export default function Dashboard() {
                   <label className="block text-sm font-medium text-gray-700">Title</label>
                   <input
                     type="text"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                    className="p-3 mt-1 block w-full rounded-md bg-gray-200 border-gray-400 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     value={newTask.title}
                     onChange={(e) => setNewTask({ ...newTask, title: e.target.value })}
                     required
@@ -110,7 +110,7 @@ export default function Dashboard() {
                 <div>
                   <label className="block text-sm font-medium text-gray-700">Description</label>
                   <textarea
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                    className="p-3  mt-1 block w-full rounded-md bg-gray-200 border-gray-400 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     value={newTask.description}
                     onChange={(e) => setNewTask({ ...newTask, description: e.target.value })}
                     required
@@ -120,7 +120,7 @@ export default function Dashboard() {
                   <label className="block text-sm font-medium text-gray-700">Due Date</label>
                   <input
                     type="date"
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                    className="p-3 mt-1 block w-full rounded-md bg-gray-200 border-gray-400 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                     value={newTask.dueDate}
                     onChange={(e) => setNewTask({ ...newTask, dueDate: e.target.value })}
                     required
